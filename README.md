@@ -12,3 +12,6 @@ https://asciinema.org/connect/cd1dde9e-c1c4-4cf4-8985-9d3eafbd6851
 
 ### ASCIINEMA BRAIN-GSD
 https://asciinema.org/a/zKvPymTv7bHR2OBOhjK5cvA80
+
+### ASCIINEMA BRAIN-PROGRESSION
+https://asciinema.org/a/QGr8rJc4erFTiWAuWdjCvtBPR

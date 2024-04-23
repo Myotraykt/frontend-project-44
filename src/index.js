@@ -3,6 +3,7 @@ import readlineSync from 'readline-sync';
 import brainEven from './games/gameEven.js';
 import brainCalc from './games/gameCalc.js';
 import brainGsd from './games/gameGsd.js';
+import brainProgression from './games/gameProgression.js';
 
 function playGame(game) {
   console.log('Welcome to the Brain Games!');
@@ -16,6 +17,9 @@ function playGame(game) {
   }
   if (game === brainGsd) {
     console.log('Find the greatest common divisor of given numbers.');
+  }
+  if (game === brainProgression) {
+    console.log('What number is missing in the progression?');
   }
 
   let correctAnswersCount = 0;
