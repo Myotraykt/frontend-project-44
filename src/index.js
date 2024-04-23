@@ -4,6 +4,7 @@ import brainEven from './games/gameEven.js';
 import brainCalc from './games/gameCalc.js';
 import brainGsd from './games/gameGsd.js';
 import brainProgression from './games/gameProgression.js';
+import brainPrime from './games/gamePrime.js';
 
 function playGame(game) {
   console.log('Welcome to the Brain Games!');
@@ -20,6 +21,9 @@ function playGame(game) {
   }
   if (game === brainProgression) {
     console.log('What number is missing in the progression?');
+  }
+  if (game === brainPrime) {
+    console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
   }
 
   let correctAnswersCount = 0;
