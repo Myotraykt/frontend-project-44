@@ -27,15 +27,14 @@ const generateExpression = () => {
 const gameCalc = () => {
     console.log("Welcome to the Brain Games!")
     const name = readlineSync.question("May i have your name? ");
-    let correctAnswers = 0;
-
     console.log(`Hello, ${name}!`);
     console.log(`What is the result of the expression?`);
 
+    let correctAnswers = 0;
     const roundsCount = 3;
     while (correctAnswers < roundsCount) {
         const { expression, correctAnswer } = generateExpression();
-        console.log(expression);
+        console.log(`Question: ${expression}`);
         const userAnswer = readlineSync.question("Your answer: ");
 
         if (Number(userAnswer) === correctAnswer) {

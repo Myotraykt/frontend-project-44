@@ -5,11 +5,10 @@ const isEven = (number) => number % 2 === 0;
 const gameEven = () => {
     console.log("Welcome to the Brain Games!")
     const name = readlineSync.question("May i have your name? ");
-    let correctAnswers = 0;
-
     console.log(`Hello, ${name}!`);
     console.log(`Answer "yes" if the number is even, otherwise answer "no".`);
 
+    let correctAnswers = 0;
     const roundsCount = 3;
     while (correctAnswers < roundsCount) {
         const number = Math.floor(Math.random() * 100) + 1;
