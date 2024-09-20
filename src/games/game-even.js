@@ -10,8 +10,8 @@ const gameEven = () => {
     console.log(`Hello, ${name}!`);
     console.log(`Answer "yes" if the number is even, otherwise answer "no".`);
 
-    const correctAnswersCount = 3;
-    while (correctAnswers < correctAnswersCount) {
+    const roundsCount = 3;
+    while (correctAnswers < roundsCount) {
         const number = Math.floor(Math.random() * 100) + 1;
         console.log(`Question: ${number}`);
         const userAnswer = readlineSync.question("Your answer: ");
@@ -22,6 +22,7 @@ const gameEven = () => {
             console.log("Correct!");
         } else {
             console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+            console.log(`Let's try again, ${name}!`)
             return;
         }
     };
