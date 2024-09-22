@@ -1,3 +1,4 @@
 import gameGcd from "../src/games/game-gcd.js";
+import runGame from "../src/index.js";
 
-gameGcd();
+runGame(gameGcd);
