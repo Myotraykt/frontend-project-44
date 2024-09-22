@@ -9,3 +9,6 @@ https://asciinema.org/a/eFqfvqXRM03mIYQB7dOQWPKi5
 
 ### BRAIN GCD ASCIINEMA
 https://asciinema.org/a/saFM7w49FVFnsFxiVM2WddIuf
+
+### BRAIN PROGRESSION ASCIINEMA
+https://asciinema.org/a/389uXph1bJe1s2XGO2baluDpo
