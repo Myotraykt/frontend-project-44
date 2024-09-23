@@ -1,23 +1,23 @@
 import getRandomNumber from '../utils.js';
 
-const instruction = `Find the greatest common divisor of given numbers.`;
+const instruction = 'Find the greatest common divisor of given numbers.';
 
-const gcd = (a, b) => {
-    while (b !== 0) {
-        const temp = b;
-        b = a % b;
-        a = temp;
+const gcd = (num1, num2) => {
+  while (num2 !== 0) {
+      const temp = num2;
+      num2 = num1 % num2;
+      num1 = temp;
     }
-    return a;
+  return num1;
 };
 
 const playGame = () => {
-    const startRandom = 1;
-    const endRandom = 100;
-    const a = getRandomNumber(startRandom, endRandom);
-    const b = getRandomNumber(startRandom, endRandom);
-    const correctAnswer = gcd(a, b).toString();
-    return { question: `${a} ${b}`, correctAnswer };
+  const startRandom = 1;
+  const endRandom = 100;
+  const num1 = getRandomNumber(startRandom, endRandom);
+  const num2 = getRandomNumber(startRandom, endRandom);
+  const correctAnswer = gcd(num1, num2).toString();
+  return { question: `${num1} ${num2}`, correctAnswer };
 };
 
 export default { playGame, instruction };
