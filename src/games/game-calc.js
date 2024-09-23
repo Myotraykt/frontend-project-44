@@ -11,23 +11,23 @@ const generateQuestionAndAnswer = () => {
   const operators = ['+', '-', '*'];
   const operator = operators[getRandomNumber(0, operators.length - 1)];
 
-  let question = `${num1} ${operator} ${num2}`;
+  const question = `${num1} ${operator} ${num2}`;
   let correctAnswer;
 
   switch (operator) {
     case '+':
       correctAnswer = String(num1 + num2);
-        break;
+      break;
     case '-':
       correctAnswer = String(num1 - num2);
-        break;
+      break;
     case '*':
       correctAnswer = String(num1 * num2);
-        break;
+      break;
     default:
       throw new Error('Unknown operator');
   }
-  return { question, correctAnswer }
+  return { question, correctAnswer };
 };
 
 export default () => runGame(generateQuestionAndAnswer, instruction);
