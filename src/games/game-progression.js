@@ -1,7 +1,8 @@
 import getRandomNumber from '../utils.js';
 
-const getProgression = (length, step) => {
-    const start = getRandomNumber(1, 20);
+const instruction = `What number is missing in the progression?`;
+
+const getProgression = (length, step, start) => {
     const progression = [];
     for (let i = 0; i < length; i += 1) {
         progression.push(start + i * step);
@@ -9,14 +10,15 @@ const getProgression = (length, step) => {
     return progression;
 };
 
-const gameProgression = () => {
-    const progLength = Math.floor(Math.random() * 6) + 5;
-    const step = Math.floor(Math.random() * 10) + 1;
-    const progression = getProgression(progLength, step);
-    const hiddenIndex = Math.floor(Math.random() * progression.length);
+const playGame = () => {
+    const progLength = getRandomNumber(5, 10);
+    const step = getRandomNumber(1, 5);
+    const start = getRandomNumber(1, 20)
+    const progression = getProgression(progLength, step, start);
+    const hiddenIndex = getRandomNumber(0, progLength);
     const correctAnswer = progression[hiddenIndex].toString();
     progression[hiddenIndex] = '..';
     return { question: progression.join(' '), correctAnswer };
 };
 
-export default gameProgression;
+export default { playGame, instruction };

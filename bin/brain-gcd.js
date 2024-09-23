@@ -1,4 +1,5 @@
-import gameGcd from "../src/games/game-gcd.js";
+#!/usr/bin/env node
+import gcd from "../src/games/game-gcd.js";
 import runGame from "../src/index.js";
 
-runGame(gameGcd);
+runGame(gcd.playGame, gcd.instruction);
